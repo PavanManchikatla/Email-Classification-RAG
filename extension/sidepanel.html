@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Email Classifier</title>
+  <link rel="stylesheet" href="sidepanel.css">
+</head>
+<body>
+  <div class="header">
+    <h1>Email Classifier</h1>
+    <span id="status-indicator" class="status-dot status-offline" title="Disconnected"></span>
+  </div>
+
+  <div id="stats-bar" class="stats-bar">
+    <span id="action-count" class="stat stat-action">0 ACTION</span>
+    <span id="info-count" class="stat stat-info">0 INFO</span>
+    <span id="noise-count" class="stat stat-noise">0 NOISE</span>
+  </div>
+
+  <div id="model-info" class="model-info"></div>
+
+  <div id="content">
+    <div id="loading" class="loading">Waiting for Gmail...</div>
+
+    <div id="action-section" class="section" style="display:none;">
+      <div class="section-header section-header-action">ACTION</div>
+      <div id="action-list" class="email-list"></div>
+    </div>
+
+    <div id="info-section" class="section" style="display:none;">
+      <div class="section-header section-header-info">INFO</div>
+      <div id="info-list" class="email-list"></div>
+    </div>
+
+    <div id="noise-section" class="section" style="display:none;">
+      <div class="section-header section-header-noise">NOISE</div>
+      <div id="noise-list" class="email-list"></div>
+    </div>
+  </div>
+
+  <div class="footer">
+    <button id="refresh-btn" class="btn-refresh" title="Refresh">Refresh</button>
+    <span id="last-updated" class="last-updated"></span>
+  </div>
+
+  <script src="sidepanel.js"></script>
+</body>
+</html>

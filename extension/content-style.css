@@ -1,0 +1,38 @@
+/* Classification badges injected into Gmail email list */
+
+.ec-badge {
+  display: inline-block;
+  font-size: 10px;
+  font-weight: 500;
+  padding: 1px 6px;
+  border-radius: 3px;
+  margin-right: 6px;
+  vertical-align: middle;
+  white-space: nowrap;
+  text-transform: capitalize;
+}
+
+.ec-badge-action {
+  background-color: #ef4444;
+  color: white;
+}
+
+.ec-badge-info {
+  background-color: #3b82f6;
+  color: white;
+}
+
+.ec-badge-noise {
+  background-color: #9ca3af;
+  color: white;
+}
+
+.ec-badge-other {
+  background-color: #8b5cf6;
+  color: white;
+}
+
+.ec-badge-uncertain {
+  opacity: 0.75;
+  border: 1px dashed rgba(255, 255, 255, 0.5);
+}

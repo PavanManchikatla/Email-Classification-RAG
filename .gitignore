@@ -2,5 +2,10 @@
 __pycache__/
 credentials.json
 token.json
+tokens/
 .env
 data/
+*.joblib
+*.pickle
+.DS_Store
+.Rhistory

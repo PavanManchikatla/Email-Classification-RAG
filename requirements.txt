@@ -1,5 +1,22 @@
+# Gmail API
 google-api-python-client
 google-auth-httplib2
 google-auth-oauthlib
+
+# Config
 python-dotenv
+
+# HTML parsing
 beautifulsoup4
+
+# LLM (for generating training labels)
+anthropic
+
+# ML classification
+scikit-learn
+joblib
+numpy
+
+# API server (for Chrome extension)
+flask
+flask-cors
